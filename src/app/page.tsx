@@ -9,8 +9,8 @@ export default function HomePage() {
       </p>
       <div className="space-y-4 text-zinc-300">
         <p>
-          Welcome to my portfolio. I'm a passionate frontend developer with a
-          focus on creating seamless and dynamic user experiences using modern
+          Welcome to my portfolio. I&apos;m a passionate frontend developer with
+          a focus on creating seamless and dynamic user experiences using modern
           web technologies.
         </p>
         <p>
