@@ -51,7 +51,7 @@ const projects: Project[] = [
     description:
       "CMS-Enabled Website for Cleaning Company, enhancing digital reach and allowing for easy content management.",
     role: "Creator",
-    url: "https://amgmbh.com",
+    url: "https://www.amgebäudereinigung.de",
   },
   {
     name: "Lans-Gr",
