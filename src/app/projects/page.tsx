@@ -74,11 +74,14 @@ export default function ProjectsPage() {
           <section key={project.name} className="space-y-6">
             <Link
               href={project.url!}
-              className="text-sm decoration-neutral-400 hover:decoration-neutral-800"
+              className="group inline-flex items-center gap-1.5 text-sm decoration-neutral-400 hover:decoration-neutral-800"
             >
-              <h2 className="text-base sm:text-lg font-semibold text-neutral-700">
+              <h2 className="text-base sm:text-lg font-semibold text-neutral-700 group-hover:text-neutral-900">
                 {project.name}
               </h2>
+              <span className="text-neutral-400 sm:opacity-0 sm:transition-opacity sm:group-hover:opacity-100">
+                →
+              </span>
             </Link>
             <p className="text-neutral-500">{project.description}</p>
           </section>
