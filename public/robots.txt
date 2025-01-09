@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Block Vercel preview URLs
+Disallow: /*?preview=*
+Host: https://muizrexhepi.com
+Sitemap: https://muizrexhepi.com/sitemap.xml

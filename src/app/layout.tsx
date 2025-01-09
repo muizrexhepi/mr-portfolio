@@ -1,13 +1,41 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import Link from "next/link";
 import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
+import { Navbar } from "@/components/navbar";
 
 export const metadata: Metadata = {
-  title: "Muiz Rexhepi - Portfolio",
-  description: "Personal portfolio of Muiz Rexhepi, Frontend Developer",
+  title: "Muiz Rexhepi - Frontend Developer and React Specialist",
+  description:
+    "Frontend Developer specializing in React, Next.js, and modern web technologies. Building performant and accessible web applications.",
+  metadataBase: new URL("https://muizrexhepi.com"),
+  alternates: {
+    canonical: "https://muizrexhepi.com",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  openGraph: {
+    title: "Muiz Rexhepi - Frontend Developer",
+    description:
+      "Frontend Developer specializing in React, Next.js, and modern web technologies.",
+    url: "https://muizrexhepi.com",
+    siteName: "Muiz Rexhepi",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Muiz Rexhepi - Frontend Developer",
+    description:
+      "Frontend Developer specializing in React, Next.js, and modern web technologies.",
+  },
 };
 
 export default function RootLayout({
@@ -16,53 +44,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="dark">
-      <body
-        className={`${inter.className} bg-zinc-900 text-zinc-100 min-h-screen`}
-      >
-        <div className="max-w-3xl mx-auto px-6">
-          <header className="py-8">
-            <nav className="flex justify-end space-x-6 text-sm">
-              <Link
-                href="/projects"
-                className="hover:text-white transition-colors"
-              >
-                Projects
-              </Link>
-              <Link
-                href="/about"
-                className="hover:text-white transition-colors"
-              >
-                About
-              </Link>
-            </nav>
-          </header>
-          <main>{children}</main>
-          <footer className="py-8 mt-12 border-t border-zinc-800 text-sm text-zinc-400">
-            <div className="flex justify-between items-center">
-              <div className="space-x-2">
-                <Link
-                  href="https://linkedin.com/in/muiz-rexhepi"
-                  className="hover:text-white transition-colors"
-                >
-                  LinkedIn
-                </Link>
-                ·
-                <Link
-                  href="https://github.com/muizrexhepi"
-                  className="hover:text-white transition-colors"
-                >
-                  GitHub
-                </Link>
-              </div>
-              <Link
-                href="mailto:muiz.rexhepi1@gmail.com"
-                className="hover:text-white transition-colors"
-              >
-                muiz.rexhepi1@gmail.com
-              </Link>
-            </div>
-          </footer>
+    <html lang="en">
+      <body className="bg-white text-neutral-900 p-6 sm:p-12">
+        <div className="flex flex-col sm:flex-row">
+          <Navbar />
+          <main className="flex-1 py-6 sm:py-0 sm:px-12 border-t sm:border-t-0 sm:border-l border-neutral-100">
+            {children}
+          </main>
         </div>
       </body>
     </html>
