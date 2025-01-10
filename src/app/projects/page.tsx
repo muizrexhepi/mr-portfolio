@@ -83,7 +83,7 @@ export default function ProjectsPage() {
                 →
               </span>
             </Link>
-            <p className="text-neutral-500">{project.description}</p>
+            <p className="text-sm sm:text-base text-neutral-500">{project.description}</p>
           </section>
         ))}
       </div>
