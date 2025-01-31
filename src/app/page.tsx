@@ -7,28 +7,15 @@ export default function HomePage() {
         Muiz Rexhepi
       </h1>
       <div className="space-y-6 text-sm sm:tracking-wide leading-5 sm:leading-6 sm:text-base text-neutral-500">
-        <p>
-          Hi! I&apos;m Muiz Rexhepi, a passionate Frontend Developer with a
-          talent for creating seamless and dynamic user experiences. I&apos;m
-          focused on delivering high-performance applications using modern
-          technologies such as React, Next.js, TypeScript, and Tailwind CSS.
+       <p>
+          Hi! I&apos;m Muiz Rexhepi, a Frontend Developer skilled in Next.js, React, TypeScript, and Node.js. 
+          I build scalable, maintainable applications with a strong emphasis on performance and user experience. 
+          From interactive UIs to backend integrations, I ensure that every project is optimized for reliability and efficiency.
         </p>
-        <p>
-          Currently, I&apos;m pursuing my B.Sc. in Computer Science at the
-          University of Tetovo, with an expected graduation in 2025. My
-          expertise lies in managing end-to-end projects, balancing technical
-          expertise with strategic planning.
-        </p>
+
         <p>
           You can gain further insights into my background and interests through
           my{" "}
-          <Link
-            href="/thoughts"
-            className="underline decoration-neutral-400 hover:decoration-neutral-800"
-          >
-            thoughts
-          </Link>
-          ,{" "}
           <Link
             href="/projects"
             className="underline decoration-neutral-400 hover:decoration-neutral-800"
