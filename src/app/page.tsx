@@ -8,9 +8,8 @@ export default function HomePage() {
       </h1>
       <div className="space-y-6 text-sm sm:tracking-wide leading-5 sm:leading-6 sm:text-base text-neutral-500">
        <p>
-          Full-stack Developer skilled in Next.js, React, TypeScript, and Node.js. 
+          Full-stack Developer based in Tetovo. Skilled in Next.js, React, TypeScript, and Node.js. 
           I build scalable, maintainable applications with a strong emphasis on performance and user experience. 
-          From interactive UIs to backend integrations, I ensure that every project is optimized for reliability and efficiency.
         </p>
 
         <p>
