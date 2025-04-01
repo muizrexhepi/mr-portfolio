@@ -10,7 +10,7 @@ export default function Template({ children }: { children: React.ReactNode }) {
       exit={{ opacity: 0, filter: "blur(8px)" }}
       transition={{
         duration: 0.7,
-        ease: [0.25, 0.1, 0.25, 1], // Subtle easing curve
+        ease: [0.25, 0.1, 0.25, 1],
         filter: {
           duration: 0.7,
           ease: [0.25, 0.1, 0.25, 1],

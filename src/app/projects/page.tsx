@@ -9,6 +9,20 @@ interface Project {
 
 const projects: Project[] = [
   {
+    name: "TvojPazar",
+    description:
+      "Modern marketplace platform built with Next.js, TypeScript, and Tailwind CSS. Features enhanced UI/UX, advanced search functionality, comprehensive filtering options, and real-time messaging between users. Implemented responsive design principles and optimized image loading for faster browsing experience. The platform offers a significantly improved user experience compared to similar regional marketplaces.",
+    role: "Creator",
+    url: "https://tvojpazar.vercel.app",
+  },
+  {
+    name: "AskNoel",
+    description:
+      "Cryptocurrency news and information platform built with Next.js and TypeScript. Integrated live news API for real-time updates and implemented an AI-powered chat system that exclusively answers crypto-related questions. Features include personalized news feeds, market data visualization, and responsive design for all devices. The platform serves as a comprehensive resource for cryptocurrency enthusiasts.",
+    role: "Creator",
+    url: "https://app.asknoel.ai",
+  },
+  {
     name: "GoBusly",
     description:
       "A modern bus ticketing platform built with Next.js 14, TypeScript, and Tailwind CSS. Implemented real-time seat availability using WebSocket, multi-currency payments via Stripe, and automated email notifications. The platform supports 4 languages and processes over 500 bookings monthly with a 98% customer satisfaction rate.",
@@ -41,21 +55,21 @@ const projects: Project[] = [
     description:
       "Restaurant POS system built with Next.js and Socket.IO for real-time order management. Features include inventory tracking, staff management, and detailed analytics. Implemented offline support using IndexedDB and optimized for tablet devices. Currently processing 2000+ orders daily across 15 restaurants.",
     role: "Creator",
-    url: "https://insylink.com",
+    url: "https://insylink.vercel.app",
   },
   {
     name: "AMGMBH",
     description:
       "Business website developed using Next.js and Sanity.io CMS. Implemented a custom booking system, automated quote calculator, and multi-language support (DE/EN). Achieved 40% increase in lead generation through optimized conversion funnels and mobile-first design.",
     role: "Creator",
-    url: "https://www.amgebäudereinigung.de",
+    url: "https://www.amgebäudereinigung.hamburg",
   },
   {
     name: "Lans-Gr",
     description:
       "E-commerce platform built with Next.js, MongoDB, and Stripe. Implemented custom product configurator, real-time price calculation, and automated order processing. Enhanced site performance using Next.js Image optimization and Incremental Static Regeneration, achieving a 65% reduction in page load time.",
     role: "Creator",
-    url: "https://lans-gr.com",
+    url: "https://lansgr.vercel.app",
   },
 ];
 
@@ -74,6 +88,7 @@ export default function ProjectsPage() {
           <section key={project.name} className="space-y-6">
             <Link
               href={project.url!}
+              target="_blank"
               className="group inline-flex items-center gap-1.5 text-sm decoration-neutral-400 hover:decoration-neutral-800"
             >
               <h2 className="text-base sm:text-lg font-semibold text-neutral-700 group-hover:text-neutral-900">
@@ -83,7 +98,9 @@ export default function ProjectsPage() {
                 →
               </span>
             </Link>
-            <p className="text-sm sm:text-base text-neutral-500">{project.description}</p>
+            <p className="text-sm sm:text-base text-neutral-500">
+              {project.description}
+            </p>
           </section>
         ))}
       </div>
